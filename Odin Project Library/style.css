@@ -1,0 +1,103 @@
+:root {
+  --body: #f1f3f8;
+  --font: #393b44;
+  --border: #666;
+  --header: #d6e0f0;
+  --title-font: #282a33;
+  --book-card: #e0e2e7;
+  --btn-green: #abf79c;
+  --btn-green-hover: #9ae68b;
+  --btn-green-active: #89d57a;
+  --btn-red: #da9797;
+  --btn-red-hover: #c98686;
+  --btn-red-active: #b87575;
+  --btn-light-green: #d3ffcd;
+  --btn-light-green-hover: #c2eebc;
+  --btn-light-green-active: #b1ddab;
+  --btn-light-red: #ffe8e8;
+  --btn-light-red-hover: #eed7d7;
+  --btn-light-red-active: #ddc6c6;
+  --modal: #d6e0f0;
+  --modal-border: #282a33;
+  --font-family: 'Oswald', sans-serif;
+}
+
+body {
+  background-color: var(--body);
+  color: var(--font);
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  /* footer support */
+  margin-bottom: 100px;
+}
+
+.books-grid {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  border: 2px solid #282a33;
+  border-radius: 10px;
+  background-color: #cf4ecf;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+nav {
+  position: relative;
+  background-color: #951FE7;
+  margin: auto;
+  border-radius: .3em;
+  text-align: center;
+}
+
+nav img {
+  width: 1em;
+  height: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: #b68bd4;
+  color: white;
+  border-radius: .2em;
+}
+
+
+#addBookBtn {
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  width: 30%;
+  font-size: 15px;
+  background-color: #D09FF2;
+  border-radius: .5em;
+  font-weight: 550;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* form  { display: table;      } */
+/* p     { display: table-column;  } */
+label {
+  display: inline-block;
+  width:150px;
+  text-align: right;
+}
+
+.checkbox {
+  border-radius: 50%;
+}

@@ -7,23 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Libary App</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    
   </head>
   <body>
     <header>
-      <h1>Simpel Library App</h1>
+      <h1 id="title">Library App</h1>
       <nav> 
         <div class="github_link">
-          <a href="">Github Link</a>
+          <img src= "logo.png"> 
+          <a href="https://github.com/chiyanz/Library_App">Github</a>
         </div>
       </nav>
     </header>
     <main class="main">
       <div class="container">
-        <button class="btn btn-green btn-large" id="addBookBtn">Add book</button>
-        <p class="books-grid" id="booksGrid"></p>
+        <button class="btn btn-green btn-large" id="addBookBtn">Add New Book</button>
+        <div class="books-grid" id="booksGrid">
+          <form id="book-survey">
+            <label id="title-label">Title</label>
+            <input type="text" name="title" id="title" placeholder="enter the book's title" required><br>
+            <label id="author-label">Author</label>
+            <input type="text" name="author" id="author" placeholder="enter the book's author" required><br>
+            <label id="pages-label">Page Count</label>
+            <input type="text" name="pages" id="pages" placeholder="enter the book's page count" required><br>
+            <label id="read-label">Read</label>
+            <input type="checkbox" name="read" id="read">
+            <label id="unread-label">In-progress</label>
+            <input type="checkbox" name="unread" id="unread">
+            <button type="submit" id="submitBook">Add New Book</button>
+          </form>
+        </div>
       </div>
+      <script src="script.js" defer></script>
     </main>
   </body>
 </html>
